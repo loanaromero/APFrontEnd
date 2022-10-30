@@ -1,0 +1,15 @@
+.row {
+  padding: 35px;
+}
+
+div{
+  background-color: #D5DBDB;
+}
+
+h2, h3 {
+  display: inline;
+}
+
+ul{
+  margin-left: 50px;
+}

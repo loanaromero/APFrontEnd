@@ -1,0 +1,17 @@
+.row {
+  padding: 35px;
+  background-color: #D5DBDB;
+}
+
+.container{
+  width: auto;
+}
+
+.ptext, .pimage{ 
+  display: inline-block;
+  text-align:justify;
+}
+
+/*.img-proj{
+  box-shadow: 5px 5px 60px #7B7D7D;
+} VER*/

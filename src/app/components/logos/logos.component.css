@@ -1,0 +1,47 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social{
+  margin-right: 10px;
+}
+
+.btn{
+  font-weight: bold;
+  color: #D5DBDB;
+  margin-left: 5px;
+}
+#logoAP{
+  width: 180px;
+}
+
+#Facebook{
+  width: 57px;
+}
+
+#GitHub{
+  width: 47px;
+}
+
+#LinkedIn{
+  width: 59px;
+}
+
+@media (max-width: 575px) {
+  .container{
+    flex-direction: column;
+  }
+  .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social img{
+    margin: 0.2em;
+  }
+  .btn{
+    margin-bottom: 0.5em;
+  }
+}
