@@ -1,5 +1,8 @@
 .row {
   padding: 35px;
+}
+
+div{
   background-color: #D5DBDB;
 }
 
@@ -12,6 +15,8 @@
   text-align:justify;
 }
 
-/*.img-proj{
+.img-proj{
+  width: 100%;
+  align-items: center;
   box-shadow: 5px 5px 60px #7B7D7D;
-} VER*/
+} 

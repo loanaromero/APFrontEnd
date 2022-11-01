@@ -1,0 +1,22 @@
+.gradient-custom {
+  background-color:#D5DBDB;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(145, 180, 194), rgba(213, 219, 219));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(145, 180, 194), rgba(213, 219, 219))
+}
+
+button{
+  margin-top: 10px;
+}
+
+.container{      
+  position: absolute;
+  top:40%;
+  left: 21%;           
+  margin-top: -100px;
+  margin-left: -100px;
+}
+

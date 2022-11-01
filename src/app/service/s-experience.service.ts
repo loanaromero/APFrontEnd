@@ -9,8 +9,8 @@ import { Experience } from '../model/experience';
   providedIn: 'root'
 })
 export class SExperienceService {
-  expURL = 'http://localhost:4200/explab/';
-  //expURL = environment.URL + 'explab/';
+  //expURL = 'http://localhost:8080/explab/';
+  expURL = 'https://backendlr.herokuapp.com/explab/';
 
   constructor(private httpClient: HttpClient) { 
 

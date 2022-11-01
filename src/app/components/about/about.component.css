@@ -17,13 +17,10 @@ div{
 }
 @media(min-width:755px){
   #profilepic {
-    position: absolute;
-    width: 15%;
     border-radius: 100%;
     box-shadow: 2px 2px 2px grey;
-    left: 50px;
-    top: 710px;
   }
+
 }
 @media(max-width:754px){
   #profilepic {

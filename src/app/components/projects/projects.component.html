@@ -1,12 +1,47 @@
 <div class="row">
   <h1> Proyectos realizados </h1>
-  <div class="container"> 
-    <div class="col-sm-12 col-md-7 col-lg-7 ptext">
-      <h3> Steel Soldier </h3>
-      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum voluptatum maiores quibusdam pariatur fuga ab ipsa sit, eaque perspiciatis consequatur repudiandae facere! A at minima nostrum cupiditate blanditiis, natus repellendus.</p>
-    </div>
-    <div class="text-center col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 pimage">
-      <img src="../../../assets/commitment.png" class="img-fluid img-proj">
-    </div>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/newpro" *ngIf="isLogged">
+      Agregar proyecto
+    </button>
   </div>
+
+  <!--<div class="col-lg-1"></div>-->
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Project of pro">
+          <td class="col-lg-3"><h3>{{Project.nombreP}}</h3></td>
+          <td class="col-lg-4">{{Project.descripP}}</td>
+          <td class="col-lg-2">
+            <a href= {{Project.linkP}} class="btn btn-success">Ir al proyecto</a>
+          </td>
+          <td class="col-lg-2">
+            <img src= '../../../assets/proyectodef.png' class="img-fluid img-proj">
+          </td>
+          <td *ngIf="isLogged">
+            <button type="button" class="btn btn-light" routerLink="/editpro/{{Project.id}}">            
+              <i class="bi bi-pencil-fill"></i>
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button type="button" class="btn btn-danger" (click)="delete(Project.id)">            
+              <i class="bi bi-trash3-fill"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 </div>
+
+<!--<div class="container"> 
+  <div class="col-sm-12 col-md-7 col-lg-7 ptext">
+    <h3> Steel Soldier </h3>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum voluptatum maiores quibusdam pariatur fuga ab ipsa sit, eaque perspiciatis consequatur repudiandae facere! A at minima nostrum cupiditate blanditiis, natus repellendus.</p> 
+  </div>
+  <div class="text-center col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 pimage">
+    <img src="../../../assets/commitment.png" class="img-fluid img-proj">
+  </div>
+</div>-->
